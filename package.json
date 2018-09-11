@@ -1,0 +1,17 @@
+{
+  "name": "boot",
+  "version": "1.0.0",
+  "description": "boot",
+  "main": "build/main.js",
+  "scripts": {
+    "prestart": "rm -fr ./build && npx tsc",
+    "start": "node build/main.js",
+    "test": "mocha"
+  },
+  "author": "Daniel Martinez",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^10.9.4",
+    "typescript": "^3.0.3"
+  }
+}
